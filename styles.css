@@ -1,0 +1,19 @@
+:root {
+    --phone-color: red;
+}
+
+header {
+    display: flex;
+    height: 136px;
+}
+
+
+.header__phones {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__phones a {
+    color: var(--phone-color);
+
+}

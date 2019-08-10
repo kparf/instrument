@@ -1,19 +1,87 @@
 :root {
     --phone-color: red;
+    --border-color: #e8e8e8;
+    --slogan-color: #1782dd;
+    --good-item-color: #fff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open sans", sans-serif;
 }
 
 header {
-    display: flex;
+    display: grid;
     height: 136px;
+    grid-template-areas: 
+        "logo info services phones";
+    justify-content: center;
+    grid-gap: 20px;
+    border-bottom: 1px solid var(--border-color);
 }
 
+
+.header__iteam {
+    max-width: 200px;
+    justify-self: center;
+    align-self: center;
+}
+
+.header__logo {
+    max-width: unset;
+    grid-area: logo;
+}
+
+.header__info {
+    grid-area: info;
+}
+
+.header__services {
+    grid-area: services;
+}
 
 .header__phones {
     display: flex;
     flex-direction: column;
+    grid-area: phones;
+    max-width: unset;
+    font-size: 24px;
+    font-weight: 900;
 }
 
 .header__phones a {
     color: var(--phone-color);
+    text-decoration: none;
+}
 
+.slogan {
+    font-size: 52px;
+    text-align: center;
+    font-weight: 700;
+    padding: 9px;
+    color: var(--slogan-color);
+}
+
+.goods {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 1000px;
+    background: url(./images/bg-prod.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    justify-content: center;
+    grid-gap: 10px;
+}
+
+.goods__item {
+    display: flex;
+    flex-direction: column;
+    max-width: 310px;
+    border: 3px solid var(--good-item-color);
+    color: var(--good-item-color);
+    padding: 10px;
+}
+
+.goods__item-header {
+    font-size: 18px;
 }

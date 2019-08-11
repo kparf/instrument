@@ -1,0 +1,11 @@
+{
+  "name": "instrument",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/kparf/instrument.git",
+  "author": "Kiryl Parfiankou <kiryl.parfiankou@itechart-group.com>",
+  "license": "MIT",
+  "dependencies": {
+    "static-server": "^2.2.1"
+  }
+}

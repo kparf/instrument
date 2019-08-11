@@ -18,6 +18,10 @@ body {
     font-family: "Open sans", sans-serif;
 }
 
+img {
+    
+}
+
 header {
     display: grid;
     height: 136px;
@@ -73,8 +77,7 @@ header {
 .goods {
     display: grid;
     grid-template-columns: auto auto auto;
-    height: 1000px;
-    background: url(./images/bg-prod.jpg) 50% 50% no-repeat;
+    background: url(../images/bg-prod.jpg) 50% 50% no-repeat;
     background-size: cover;
     justify-content: center;
     grid-gap: 10px;
@@ -90,6 +93,7 @@ header {
     border: 3px solid var(--good-item-color);
     color: var(--good-item-color);
     padding: 10px;
+    min-height: 480px;
 }
 
 .goods__item-header {
@@ -127,7 +131,7 @@ header {
 
     padding: 20px 0;
 
-    background: url(./images/bg-act.jpg) 50% 50% no-repeat;
+    background: url(../images/bg-act.jpg) 50% 50% no-repeat;
     background-size: cover;
 
     color: var(--second-color);
@@ -238,7 +242,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: start;
-    max-width: 320px;
+    max-width: 280px;
+    margin: 0 20px;
 }
 
 .delivery__item-header {
@@ -259,7 +264,8 @@ header {
 
 
 .advantages {
-    background: url(./images/bg-benef.jpg) 50% 50% no-repeat;
+    background: url(../images/bg-benef.jpg) 50% 50% no-repeat;
+    background-size: cover; 
     --section-header-color: var(--second-color);
     color: var(--second-color);
     padding: 30px 0 40px;

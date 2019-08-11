@@ -3,6 +3,13 @@
     --border-color: #e8e8e8;
     --slogan-color: #1782dd;
     --good-item-color: #fff;
+    --second-color: #fff;
+    --secondary-text-color: #818181;
+    --button-border-color: #4fc6fc;
+    --button-order-bg-color: #98da20;
+    --shadow-color: #000;
+    --section-header-color: #6b6b6b;
+    --footer-bg: #30a1f0;
 }
 
 body {
@@ -71,17 +78,298 @@ header {
     background-size: cover;
     justify-content: center;
     grid-gap: 10px;
+    padding: 65px 0 8px 0;
 }
 
 .goods__item {
     display: flex;
     flex-direction: column;
-    max-width: 310px;
+    align-items: center;
+    justify-content: space-between;
+    width: 310px;
     border: 3px solid var(--good-item-color);
     color: var(--good-item-color);
     padding: 10px;
 }
 
 .goods__item-header {
-    font-size: 18px;
+    font-size: 19px;
+    align-self: stretch;
+    margin: 0;
+}
+
+.goods__item-button {
+    font-size: 19px;
+    color: inherit;
+    background: transparent;
+    border: 3px solid var(--button-border-color);
+    height: 47px;
+    min-width: 185px;
+    cursor: pointer;
+}
+
+.goods__item-button:focus {
+    outline: solid #ff00008c;
+}
+
+.goods__item-price {
+    font-size: 30px;
+}
+
+.addition {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "image-main text"
+        "gift       text";
+    justify-content: center;
+
+    padding: 20px 0;
+
+    background: url(./images/bg-act.jpg) 50% 50% no-repeat;
+    background-size: cover;
+
+    color: var(--second-color);
+}
+
+.addition__gift {
+    grid-area: gift;
+}
+
+.addition__text {
+    grid-area: text;
+    max-width: 450px;
+}
+
+.addition__image-main {
+    grid-area: image-main;
+}
+
+.addition__text-header {
+    font-size: 32px;
+    text-transform: uppercase;
+    line-height: 48px;
+    font-weight: 300;
+}
+
+.addition__text-button {
+    background-color: var(--button-order-bg-color);
+    border: none;
+    color: inherit;
+    font-size: 22px;
+    min-width: 230px;
+    height: 60px;
+}
+
+.addition__text-price {
+    font-size: 30px;
+}
+
+.addition__text-order {
+    display: flex;
+    margin: 35px 0;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+.addition__text-description {
+    font-size: 17px;
+}
+
+
+.addition__text-read-button {
+    --button-border-color: var(--button-order-bg-color);
+    min-width: 200px;
+}
+
+.button {
+    font-size: 19px;
+    color: inherit;
+    background: transparent;
+    border: 3px solid var(--button-border-color);
+    height: 47px;
+    cursor: pointer;
+}
+
+.addition__gift {
+    display: flex;
+    align-items: center;
+    text-shadow: 3px 4px 21px var(--shadow-color);
+}
+
+.addition__gift-plus {
+    font-size: 40px;
+}
+
+.addition__gift-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.addition__gift-image {
+    padding: 0 10px;
+}
+
+.delivery {
+    margin-bottom: 30px;
+}
+
+.delivery__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section__header {
+    color: var(--section-header-color);
+    font-size: 52px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.delivery__item {
+    --header-font-size: 18px;
+    --header-color: #323232;
+    --description-font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    max-width: 320px;
+}
+
+.delivery__item-header {
+    font-size: var(--header-font-size);
+    font-weight: 600;
+    color: var(--header-color);
+    margin: 0 0 22px 0;
+}
+
+.delivery__item-description {
+    font-size: var(--description-font-size);
+    color: var(--secondary-text-color);
+}
+
+.delivery__item-image {
+    padding-right: 20px;
+}
+
+
+.advantages {
+    background: url(./images/bg-benef.jpg) 50% 50% no-repeat;
+    --section-header-color: var(--second-color);
+    color: var(--second-color);
+    padding: 30px 0 40px;
+}
+
+.advantages__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.advantages__item {
+    display: flex;
+    max-width: 220px; 
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.advantages__item-description {
+    text-align: center;
+}
+
+.advantages__item-image {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.comments__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comments__item {
+    display: flex;
+    max-width: 960px;
+
+    align-items: center;
+    padding: 20px;
+    margin: 15px 0;
+    border: 1px solid var(--border-color);
+}
+
+.comments__item-header {
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 11px;
+    margin: 0;
+}
+
+.comments__item-image {
+    margin-right: 20px;
+}
+
+.comments {
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: var(--footer-bg); 
+}
+
+.footer__item {
+    max-width: 200px;
+    justify-self: center;
+    align-self: center;
+}
+
+footer {
+    display: grid;
+    height: 136px;
+    grid-template-areas: 
+        "logo info services phones";
+    justify-content: center;
+    grid-gap: 20px;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--second-color);
+}
+
+
+.footer__logo {
+    max-width: unset;
+    grid-area: logo;
+}
+
+.footer__info {
+    grid-area: info;
+}
+
+.footer__services {
+    grid-area: services;
+}
+
+.footer__phones {
+    --phone-color: var(--second-color);
+    display: flex;
+    flex-direction: column;
+    grid-area: phones;
+    max-width: unset;
+}
+
+.phones {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.phones a {
+    color: var(--phone-color);
+    text-decoration: none;
 }

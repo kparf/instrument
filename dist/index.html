@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Instruments</title>
+        <meta charset="UTF-8">
+        <script src="scripts/mavo.min.js"></script>
+        <link rel="stylesheet" href="styles/mavo.css">
+        <link rel="stylesheet" href="styles/styles.css"/>
+    </head>
+    <body mv-app="instrument-project" mv-storage="https://github.com/kparf/instrument-data">
+        <header>        
+            <div class="header__logo header__iteam">
+                <img property="header__logo" src="images/logo.png"/>
+            </div>
+            <div property="header__info" class="header__info header__iteam">
+                Первый поставщик представительство ADA instruments
+            </div>
+            <div property="header__services" class="header__services header__iteam">
+                Бесплатная доставка 
+                Гарантийный срок 24 месяца
+                Нал., Безнал., ЕРИП, Халва
+            </div>
+            <div class="header__phones header__iteam">
+                <a property="phone" mv-multiple mv-attribute="none" href="tel:[phone]">+375 11 111 11 11</a>
+            </div>
+        </header>
+        <main>
+            <div class="slogan">
+                Лучшие цены! Подарок всем!
+            </div>
+            <section class="goods">
+                <article property="goods__item" class="goods__item" mv-multiple>
+                    <h6 property="goods__item-header" class="goods__item-header">Заголовок</h6>
+                    <img property="goods__item-image" alt="Изобрадение товара" class="goods__item-image" mv-default="./images/image-placeholder.png"/>
+                    <span property="goods__item-price" class="goods__item-price">цена руб.</span>
+                    <button class="goods__item-button">Подробнее</button>
+                </article>
+            </section>
+            <section class="addition">
+                <img src="./images/act-img-3.png" class="addition__image-main"/>
+                <div class="addition__text">
+                    <h3 property="addition__text-header" class="addition__text-header">Построители лазерных плоскостей ADA 6D Servoliner / Green</h3>
+                    <div class="addition__text-order">
+                        <button class="addition__text-button">Заказать</button>
+                        <span property="addition__text-price" class="addition__text-price">970 / 1135 руб.</span>
+                    </div>
+                    <div class="addition__text-description">
+                        <p property="addition__text-description-main">
+                            Линейный лазерный уровень ADA 6D SERVOLINER / GREEN – это простые в использовании и
+                            доступные построители плоскостей. Такой лазерный уровень отстраивает в пространстве 4 горизонтальные и
+                            4 вертикальные линии, пересекающиеся между собой под прямым углом, в результате чего образуется лазерный
+                            крест впереди прибора, сзади нивелира и в зените. Угол развертки получаемой горизонтальной плоскости составляет 360°.
+                            По вертикали лучи разворачиваются на 270°.
+                        </p>
+                        <p>Подробное описание и видео обзор на <a href="https://v-i.by/product/lazernyy-nivelir-ada-6d-servoliner-green/">v-i.by</a></p>
+                        <button class="addition__text-read-button button">Читать описание</button>
+                    </div>
+                </div>
+                <div class="addition__gift">
+                    <span class="addition__gift-plus">+</span>
+                    <img src="./images/pres.png" class="addition__gift-image"/>
+                    <div class="addition__gift-text">
+                        <span class="addition__gift-text-header">подарок</span>
+                        <span class="addition__gift-text-description">Дальномер лазерный</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="delivery">
+                <h2 property="section__header" class="section__header">Доставка</h2>
+                <div class="delivery__container">
+                    <article property="delivery__item" mv-multiple class="delivery__item">
+                        <img property="delivery__item-image" class="delivery__item-image" mv-default="./images/image-placeholder-129-99.png"/>
+                        <div>
+                            <h6 property="delivery__item-header" class="delivery__item-header">Самовывоз - ул. Калиновского 31/А</h6>
+                            <span property="delivery__item-description" class="delivery__item-description">Наличный и безналичный расчет! + карта ХАЛВА и ЕРИП</span>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="advantages">
+                <h2 class="section__header" mv-default="Заголовок"></h2>
+                <div class="advantages__container">
+                    <article property="advantages__item" mv-multiple class="advantages__item">
+                        <img property="advantages__item-image" class="advantages__item-image" mv-default="./images/image-placeholder-148-89.png"/>
+                        <span property="advantages__item-description" class="advantages__item-description"  mv-default="Описание"></span>
+                    </article>
+                </div>
+            </section>
+
+            <section class="comments">
+                <h2 class="section__header">Последние отзывы</h2>
+                <div class="comments__container">
+                    <article property="comments__item" class="comments__item">
+                        <img class="comments__item-image"  src="./images/3-120x120.jpg"/>
+                        <div>
+                            <h6 class="comments__item-header">Иван ( Установка кондиционеров):</h6>
+                            <span class="comments__item-description">
+                                    Пользуюсь лазерным нивелиром давно. Решил обновить. Искал долго в Интернете рассматривал разные варианты.
+                                    Позвонил в «Ваш инструмент торг», по телефону чётко ответили на мои простые и сложные вопросы,
+                                    пригласили посетить их офис, я не отказался. В офисе представлено штук 30 разных вариантов, может даже и больше.
+                                    По перечню функций мы с менеджером выбрали тот, который меня устроил! Дали гарантию на 2 года. И карту клиента,
+                                    со скидкой на будущие покупки 5%. Отличная компания и хороший ассортимент товара.
+                            </span>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer__logo footer__item">
+                <img property="footer__logo" src="images/logo-footer.png"/>
+            </div>
+            <div property="footer__info"  class="footer__info footer__item">
+                Первый поставщик представительство ADA instruments
+            </div>
+            <div property="footer__services"  class="footer__services footer__item">
+                Бесплатная доставка 
+                Гарантийный срок 24 месяца
+                Нал., Безнал., ЕРИП, Халва
+            </div>
+            <div class="footer__phones footer__item phones">
+                <a property="footer__phones" mv-multiple mv-attribute="none" href="tel:[footer__phones]">+375 17 281-27-11</a>
+            </div>
+        </footer>
+    </body>
+</html>

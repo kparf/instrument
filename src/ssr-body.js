@@ -2,8 +2,6 @@ const puppeteer = require('puppeteer');
 
 async function ssr(url) {
 
-  const start = Date.now();
-
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
 
@@ -14,12 +12,12 @@ async function ssr(url) {
     throw new Error('page.goto/waitForSelector timed out.');
   }
 
-  const html = await page.content(); 
+  const body = await page.$eval('body', e => e.outerHTML);
+
   await browser.close();
 
-  const ttRenderMs = Date.now() - start;
 
-  return { html, ttRenderMs };
+  return body.toString();
 }
 
 module.exports = ssr;
